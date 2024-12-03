@@ -171,19 +171,17 @@ def user_stats(df):
 def display_raw_data(df, city):
     """ Displays 5 rows of raw data from city user selected"""
     i = 0
-    # TO DO: convert the user input to lower case using lower() function
-    raw = input(f"Would like to see raw data from ({city}) dataset. Enter 'yes' or 'no' :").lower().lstrip().rstrip() 
+    raw = input(f"Would like to see raw data from ({city}) dataset. Enter 'yes' or 'no' :").lower().strip() 
     pd.set_option('display.max_columns',200)
     while True:            
         if raw == 'no':
             break
         elif raw == 'yes':
-            # TO DO: appropriately subset/slice your dataframe to display next five rows
             print(df[i:i+5]) 
-            raw = input("Would like to see more records. Enter 'yes' or 'no':").lower().lstrip().rstrip() 
+            raw = input("Would like to see more records. Enter 'yes' or 'no':").lower().strip() 
             i += 5
         else:
-            raw = input("Your input is invalid. Enter 'yes' or 'no':").lower().lstrip().rstrip()
+            raw = input("Your input is invalid. Enter 'yes' or 'no':").lower().strip()
     print('-'*40)
 
 def main():
