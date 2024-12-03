@@ -10,6 +10,11 @@ Python project exploring data related to bike share systems for three major citi
 Data Files:
 Randomly selected data for the first six months of 2017 are provided for all three cities - Chicago, New York City, and Washington, DC.
 
+Program Input:
+    The program takes user input for the city (e.g. Chicago), 
+    Month for which the user wants to view data (e.g. January; also includes an 'all' option), 
+    and Day for which the user wants to view data (e.g. Monday; also includes an 'all' option)
+
 Statistics Computed:
 
     #1 Popular times of travel (i.e., occurs most often in the start time)
@@ -30,6 +35,14 @@ Statistics Computed:
         counts of each user type
         counts of each gender (only available for NYC and Chicago)
         earliest, most recent, most common year of birth (only available for NYC and Chicago)
+
+Run Command:
+    python bikeshare.py
+    python3 bikeshare.py
+
+Requirements:
+    Language: Python 3.9 or above
+    Libraries: pandas, numpy, time
 
 ### Files used
 * chicago.csv
